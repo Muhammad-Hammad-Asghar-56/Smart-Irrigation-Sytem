@@ -1,0 +1,6 @@
+
+AVRASM ver. 2.2.8  D:\Semesters\3rd Semester (DSA)\Assembly Language\COAL Final Project\Final Project G4\Final Project G4\main.asm Sat Dec 24 18:20:29 2022
+
+[builtin](2): Including file 'C:/Program Files (x86)\Atmel\Studio\7.0\Packs\atmel\ATmega_DFP\1.7.374\avrasm\inc\m328Pdef.inc'
+D:\Semesters\3rd Semester (DSA)\Assembly Language\COAL Final Project\Final Project G4\Final Project G4\main.asm(12): Including file 'C:/Program Files (x86)\Atmel\Studio\7.0\Packs\atmel\ATmega_DFP\1.7.374\avrasm\inc\m328pdef.inc'
+D:\Semesters\3rd Semester (DSA)\Assembly Language\COAL Final Project\Final Project G4\Final Project G4\main.asm(14): error: syntax error, unexpected INTEGER, expecting REGISTER
