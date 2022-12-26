@@ -11,6 +11,9 @@
  <INCLUDED_FILES>
   <FILE>C:/Program Files (x86)\Atmel\Studio\7.0\Packs\atmel\ATmega_DFP\1.7.374\avrasm\inc\m328Pdef.inc</FILE>
   <FILE>C:/Program Files (x86)\Atmel\Studio\7.0\Packs\atmel\ATmega_DFP\1.7.374\avrasm\inc\m328pdef.inc</FILE>
+  <FILE>D:\Semesters\3rd Semester (DSA)\Assembly Language\COAL Final Project\Final Project G4\Final Project G4\delayMacro.inc</FILE>
+  <FILE>D:\Semesters\3rd Semester (DSA)\Assembly Language\COAL Final Project\Final Project G4\Final Project G4\div.inc</FILE>
+  <FILE>D:\Semesters\3rd Semester (DSA)\Assembly Language\COAL Final Project\Final Project G4\Final Project G4\lcd_Macros.inc</FILE>
  </INCLUDED_FILES>
  <OBJECT_FILES>
   <FILE>D:\Semesters\3rd Semester (DSA)\Assembly Language\COAL Final Project\Final Project G4\Final Project G4\Debug\Final Project G4.obj</FILE>
@@ -23,7 +26,8 @@
   <FILE>Final Project G4.lss</FILE>
  </OUTPUT_FILES>
  <LABELS>
-  <loop><FILE>D:\Semesters\3rd Semester (DSA)\Assembly Language\COAL Final Project\Final Project G4\Final Project G4\main.asm</FILE><LINE>22</LINE></loop>
-  <LED_ON><FILE>D:\Semesters\3rd Semester (DSA)\Assembly Language\COAL Final Project\Final Project G4\Final Project G4\main.asm</FILE><LINE>30</LINE></LED_ON>
+  <loop><FILE>D:\Semesters\3rd Semester (DSA)\Assembly Language\COAL Final Project\Final Project G4\Final Project G4\main.asm</FILE><LINE>38</LINE></loop>
+  <compare><FILE>D:\Semesters\3rd Semester (DSA)\Assembly Language\COAL Final Project\Final Project G4\Final Project G4\main.asm</FILE><LINE>46</LINE></compare>
+  <Print_On_LED><FILE>D:\Semesters\3rd Semester (DSA)\Assembly Language\COAL Final Project\Final Project G4\Final Project G4\main.asm</FILE><LINE>56</LINE></Print_On_LED>
  </LABELS>
 </ASSEMBLER_INFO>
