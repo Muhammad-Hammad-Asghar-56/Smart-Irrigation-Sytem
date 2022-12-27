@@ -1,5 +1,5 @@
 
-AVRASM ver. 2.2.8  D:\Semesters\3rd Semester (DSA)\Assembly Language\COAL Final Project\Final Project G4\Final Project G4\main.asm Mon Dec 26 23:55:44 2022
+AVRASM ver. 2.2.8  D:\Semesters\3rd Semester (DSA)\Assembly Language\COAL Final Project\Final Project G4\Final Project G4\main.asm Tue Dec 27 18:35:02 2022
 
 [builtin](2): Including file 'C:/Program Files (x86)\Atmel\Studio\7.0\Packs\atmel\ATmega_DFP\1.7.374\avrasm\inc\m328Pdef.inc'
 D:\Semesters\3rd Semester (DSA)\Assembly Language\COAL Final Project\Final Project G4\Final Project G4\main.asm(8): Including file 'C:/Program Files (x86)\Atmel\Studio\7.0\Packs\atmel\ATmega_DFP\1.7.374\avrasm\inc\m328pdef.inc'
@@ -1087,29 +1087,29 @@ D:\Semesters\3rd Semester (DSA)\Assembly Language\COAL Final Project\Final Proje
                                  ; r16 ;dividend
                                  ; r17 ;divisor
                                  ; r18 ;loop counter
-                                 push r18
+                                 	push r18
                                  
-                                 div8u:
-                                 	sub r15,r15 ;clear remainder and carry
-                                 	ldi r18,9 ;init loop counter
-                                 	d8u_1:
-                                 	rol r16 ;shift left dividend
-                                 	dec r18 ;decrement counter
-                                 	brne d8u_2 ;if done
-                                 rjmp exit ;return
+                                 	div8u:
+                                 		sub r15,r15 ;clear remainder and carry
+                                 		ldi r18,9 ;init loop counter
+                                 		d8u_1:
+                                 		rol r16 ;shift left dividend
+                                 		dec r18 ;decrement counter
+                                 		brne d8u_2 ;if done
+                                 	rjmp exit ;return
                                  
-                                 d8u_2:
-                                 	rol r15 ;shift dividend into remainder
-                                 	sub r15,r17 ;remainder = remainder - divisor
-                                 	brcc d8u_3 ;if result negative
-                                 	add r15,r17 ;restore remainder
-                                 	clc ;clear carry to be shifted into result
-                                 	rjmp d8u_1 ;else
-                                 d8u_3:
-                                 	sec ;set carry to be shifted into result
-                                 rjmp d8u_1
-                                 exit:
-                                 	pop r18
+                                 	d8u_2:
+                                 		rol r15 ;shift dividend into remainder
+                                 		sub r15,r17 ;remainder = remainder - divisor
+                                 		brcc d8u_3 ;if result negative
+                                 		add r15,r17 ;restore remainder
+                                 		clc ;clear carry to be shifted into result
+                                 		rjmp d8u_1 ;else
+                                 	d8u_3:
+                                 		sec ;set carry to be shifted into result
+                                 	rjmp d8u_1
+                                 	exit:
+                                 		pop r18
                                  .endmacro
                                  .include "lcd_Macros.inc"
                                  
@@ -1153,7 +1153,6 @@ D:\Semesters\3rd Semester (DSA)\Assembly Language\COAL Final Project\Final Proje
                                  
                                  	POP r16
                                  .org 0x00
-                                 ;
                                  
                                  ; Setting pins to Output for LCD
 000000 9a50                      	sbi DDRD,PD0 ; D0 pin of LCD
@@ -1243,7 +1242,7 @@ D:\Semesters\3rd Semester (DSA)\Assembly Language\COAL Final Project\Final Proje
 00004f 910f                      	LCD_send_a_command 0x0C ; screen ON
 000050 9a2d                      	sbi PORTB,PB5 ; Backlight ON
                                  
-                                 
+                                 ;---------------------------------------------------------------------------------------------------------------------------
                                  loop:
 000051 930f
 000052 e001
@@ -1268,89 +1267,337 @@ D:\Semesters\3rd Semester (DSA)\Assembly Language\COAL Final Project\Final Proje
 000065 e000
 000066 b90b
 000067 910f                      	LCD_send_a_command 0x01 ; clear the LCD
-                                 	; take reading from the Sensor
-000068 e70b                      	LDI r16,123
-                                 	; r15 remainder
-                                 	; r16 result
-                                 	; r16 dividend
-                                 	; r17 divisor
-000069 3001                      compare:	CPI r16,1
-00006a f330                      			brlo loop
-00006b e01a                      			LDI r17,10
-00006c 932f
-00006d 18ff
-00006e e029
-00006f 1f00
-000070 952a
-000071 f409
-000072 c008
-000073 1cff
-000074 1af1
-000075 f418
-000076 0ef1
-000077 9488
-000078 cff6
-000079 9408
-00007a cff4
-00007b 912f                      			div	
-00007c 940e 007f                 			call Print_On_LED
+000068 930f
+000069 e502
+00006a b90b
+00006b 9a28
+00006c 9a29
+00006d 932f
+00006e 938f
+00006f 939f
+000070 e023
+000071 e38e
+000072 e99c
+000073 9701
+000074 f7f1
+000075 952a
+000076 f7d1
+000077 0000
+000078 919f
+000079 918f
+00007a 912f
+00007b 9829
+00007c e000
+00007d b90b
+00007e 910f                      	LCD_send_a_character 'R'
+00007f 930f
+000080 e405
+000081 b90b
+000082 9a28
+000083 9a29
+000084 932f
+000085 938f
+000086 939f
+000087 e023
+000088 e38e
+000089 e99c
+00008a 9701
+00008b f7f1
+00008c 952a
+00008d f7d1
+00008e 0000
+00008f 919f
+000090 918f
+000091 912f
+000092 9829
+000093 e000
+000094 b90b
+000095 910f                      	LCD_send_a_character 'E'
+000096 930f
+000097 e401
+000098 b90b
+000099 9a28
+00009a 9a29
+00009b 932f
+00009c 938f
+00009d 939f
+00009e e023
+00009f e38e
+0000a0 e99c
+0000a1 9701
+0000a2 f7f1
+0000a3 952a
+0000a4 f7d1
+0000a5 0000
+0000a6 919f
+0000a7 918f
+0000a8 912f
+0000a9 9829
+0000aa e000
+0000ab b90b
+0000ac 910f                      	LCD_send_a_character 'A'
+0000ad 930f
+0000ae e404
+0000af b90b
+0000b0 9a28
+0000b1 9a29
+0000b2 932f
+0000b3 938f
+0000b4 939f
+0000b5 e023
+0000b6 e38e
+0000b7 e99c
+0000b8 9701
+0000b9 f7f1
+0000ba 952a
+0000bb f7d1
+0000bc 0000
+0000bd 919f
+0000be 918f
+0000bf 912f
+0000c0 9829
+0000c1 e000
+0000c2 b90b
+0000c3 910f                      	LCD_send_a_character 'D'
+0000c4 930f
+0000c5 e409
+0000c6 b90b
+0000c7 9a28
+0000c8 9a29
+0000c9 932f
+0000ca 938f
+0000cb 939f
+0000cc e023
+0000cd e38e
+0000ce e99c
+0000cf 9701
+0000d0 f7f1
+0000d1 952a
+0000d2 f7d1
+0000d3 0000
+0000d4 919f
+0000d5 918f
+0000d6 912f
+0000d7 9829
+0000d8 e000
+0000d9 b90b
+0000da 910f                      	LCD_send_a_character 'I'
+0000db 930f
+0000dc e40e
+0000dd b90b
+0000de 9a28
+0000df 9a29
+0000e0 932f
+0000e1 938f
+0000e2 939f
+0000e3 e023
+0000e4 e38e
+0000e5 e99c
+0000e6 9701
+0000e7 f7f1
+0000e8 952a
+0000e9 f7d1
+0000ea 0000
+0000eb 919f
+0000ec 918f
+0000ed 912f
+0000ee 9829
+0000ef e000
+0000f0 b90b
+0000f1 910f                      	LCD_send_a_character 'N'
+0000f2 930f
+0000f3 e407
+0000f4 b90b
+0000f5 9a28
+0000f6 9a29
+0000f7 932f
+0000f8 938f
+0000f9 939f
+0000fa e023
+0000fb e38e
+0000fc e99c
+0000fd 9701
+0000fe f7f1
+0000ff 952a
+000100 f7d1
+000101 0000
+000102 919f
+000103 918f
+000104 912f
+000105 9829
+000106 e000
+000107 b90b
+000108 910f                      	LCD_send_a_character 'G'
+000109 930f
+00010a e30a
+00010b b90b
+00010c 9a28
+00010d 9a29
+00010e 932f
+00010f 938f
+000110 939f
+000111 e023
+000112 e38e
+000113 e99c
+000114 9701
+000115 f7f1
+000116 952a
+000117 f7d1
+000118 0000
+000119 919f
+00011a 918f
+00011b 912f
+00011c 9829
+00011d e000
+00011e b90b
+00011f 910f                      	LCD_send_a_character ':'
+                                 
+000120 e70b                      	LDI r16,123
+                                 	
+                                 	;					ON/OFF	Probe
+000121 3604                      	CPI r16,100 ;jump if same or higher (AH >= 100)
+000122 f000                      	Brlo CarryOn
+                                 	;LDI r17, (1<<PINB3) ; load 00100000 into register R16
+                                 	;OUT DDRB, r17 ; write register R16 value to DDRB register
+                                 	;LDI r18, (1<<PINB3) ; load 00100000 into register R16
+                                 	;OUT PORTB, r18 ; write register R16 value to PORTB register
+                                 	
+                                 CarryOn:	; check 100th Place
+000123 e614                      	LDI r17,100
+000124 932f
+000125 18ff
+000126 e029
+000127 1f00
+000128 952a
+000129 f409
+00012a c008
+00012b 1cff
+00012c 1af1
+00012d f418
+00012e 0ef1
+00012f 9488
+000130 cff6
+000131 9408
+000132 cff4
+000133 912f                      	div
+                                 	
+000134 e340                      	LDI r20,48
+000135 0f04                      	add r16,r20
+000136 930f
+000137 2f00
+000138 b90b
+000139 9a28
+00013a 9a29
+00013b 932f
+00013c 938f
+00013d 939f
+00013e e023
+00013f e38e
+000140 e99c
+000141 9701
+000142 f7f1
+000143 952a
+000144 f7d1
+000145 0000
+000146 919f
+000147 918f
+000148 912f
+000149 9829
+00014a e000
+00014b b90b
+00014c 910f                      	LCD_send_a_reg r16
                                  	
                                  	
-00007e cfd2                      rjmp loop
+                                 	; check 10th Place 
+00014d 2d0f                      	mov r16,r15
+00014e e01a                      	LDI r17,10
+00014f 932f
+000150 18ff
+000151 e029
+000152 1f00
+000153 952a
+000154 f409
+000155 c008
+000156 1cff
+000157 1af1
+000158 f418
+000159 0ef1
+00015a 9488
+00015b cff6
+00015c 9408
+00015d cff4
+00015e 912f                      	div
+00015f e340                      	LDI r20,48
+000160 0f04                      	add r16,r20
+000161 930f
+000162 2f00
+000163 b90b
+000164 9a28
+000165 9a29
+000166 932f
+000167 938f
+000168 939f
+000169 e023
+00016a e38e
+00016b e99c
+00016c 9701
+00016d f7f1
+00016e 952a
+00016f f7d1
+000170 0000
+000171 919f
+000172 918f
+000173 912f
+000174 9829
+000175 e000
+000176 b90b
+000177 910f                      	LCD_send_a_reg r16
+                                 	
                                  
+                                 	; check 1th Place 
+000178 e340                      	LDI r20,48
+000179 0ef4                      	add r15,r20
+00017a 930f
+00017b 2d0f
+00017c b90b
+00017d 9a28
+00017e 9a29
+00017f 932f
+000180 938f
+000181 939f
+000182 e023
+000183 e38e
+000184 e99c
+000185 9701
+000186 f7f1
+000187 952a
+000188 f7d1
+000189 0000
+00018a 919f
+00018b 918f
+00018c 912f
+00018d 9829
+00018e e000
+00018f b90b
+000190 910f                      	LCD_send_a_reg r15
+                                 	
+000191 932f
+000192 938f
+000193 939f
+000194 e624
+000195 e38e
+000196 e99c
+000197 9701
+000198 f7f1
+000199 952a
+00019a f7d1
+00019b 0000
+00019c 919f
+00019d 918f
+00019e 912f                      	delay 1000
+00019f ceb1                      rjmp loop
                                  
-                                 Print_On_LED:
-                                 	; Sending Hello World to LCD
-00007f e340                      	LDI r20,48
-000080 0ef4                      	add r15,r20
-000081 930f
-000082 2d0f
-000083 b90b
-000084 9a28
-000085 9a29
-000086 932f
-000087 938f
-000088 939f
-000089 e023
-00008a e38e
-00008b e99c
-00008c 9701
-00008d f7f1
-00008e 952a
-00008f f7d1
-000090 0000
-000091 919f
-000092 918f
-000093 912f
-000094 9829
-000095 e000
-000096 b90b
-000097 910f                      	LCD_send_a_reg r15; 'H'
-                                 	;LCD_send_a_command 0xC0 ; move curser to next line
-000098 930f
-000099 e103
-00009a b90b
-00009b 9828
-00009c 9a29
-00009d 932f
-00009e 938f
-00009f 939f
-0000a0 e025
-0000a1 e38e
-0000a2 e99c
-0000a3 9701
-0000a4 f7f1
-0000a5 952a
-0000a6 f7d1
-0000a7 0000
-0000a8 919f
-0000a9 918f
-0000aa 912f
-0000ab 9829
-0000ac e000
-0000ad b90b
-0000ae 910f                      	LCD_send_a_command 0x13 ; move curser one step forward (another way to add space)
-                                 	;delay 1000
+                                 ;---------------------------------------------------------------------------------------------------------------------------
 
 
 RESOURCE USE INFORMATION
@@ -1370,37 +1617,37 @@ counted separately from r26..r31 here.
 "ATmega328P" register use summary:
 x  :   0 y  :   0 z  :   0 r0 :   0 r1 :   0 r2 :   0 r3 :   0 r4 :   0 
 r5 :   0 r6 :   0 r7 :   0 r8 :   0 r9 :   0 r10:   0 r11:   0 r12:   0 
-r13:   0 r14:   0 r15:   7 r16:  39 r17:   3 r18:  28 r19:   0 r20:   2 
-r21:   0 r22:   0 r23:   0 r24:  24 r25:  18 r26:   0 r27:   0 r28:   0 
+r13:   0 r14:   0 r15:  13 r16:  99 r17:   6 r18:  72 r19:   0 r20:   6 
+r21:   0 r22:   0 r23:   0 r24:  64 r25:  48 r26:   0 r27:   0 r28:   0 
 r29:   0 r30:   0 r31:   0 
 Registers used: 7 out of 35 (20.0%)
 
 "ATmega328P" instruction use summary:
-.lds  :   0 .sts  :   0 adc   :   0 add   :   2 adiw  :   0 and   :   0 
+.lds  :   0 .sts  :   0 adc   :   0 add   :   5 adiw  :   0 and   :   0 
 andi  :   0 asr   :   0 bclr  :   0 bld   :   0 brbc  :   0 brbs  :   0 
-brcc  :   1 brcs  :   0 break :   0 breq  :   0 brge  :   0 brhc  :   0 
+brcc  :   2 brcs  :   0 break :   0 breq  :   0 brge  :   0 brhc  :   0 
 brhs  :   0 brid  :   0 brie  :   0 brlo  :   1 brlt  :   0 brmi  :   0 
-brne  :  13 brpl  :   0 brsh  :   0 brtc  :   0 brts  :   0 brvc  :   0 
-brvs  :   0 bset  :   0 bst   :   0 call  :   2 cbi   :  11 cbr   :   0 
-clc   :   1 clh   :   0 cli   :   0 cln   :   0 clr   :   0 cls   :   0 
+brne  :  34 brpl  :   0 brsh  :   0 brtc  :   0 brts  :   0 brvc  :   0 
+brvs  :   0 bset  :   0 bst   :   0 call  :   0 cbi   :  19 cbr   :   0 
+clc   :   2 clh   :   0 cli   :   0 cln   :   0 clr   :   0 cls   :   0 
 clt   :   0 clv   :   0 clz   :   0 com   :   0 cp    :   0 cpc   :   0 
-cpi   :   1 cpse  :   0 dec   :   7 eor   :   0 fmul  :   0 fmuls :   0 
+cpi   :   1 cpse  :   0 dec   :  18 eor   :   0 fmul  :   0 fmuls :   0 
 fmulsu:   0 icall :   0 ijmp  :   0 in    :   0 inc   :   0 jmp   :   0 
-ld    :   0 ldd   :   0 ldi   :  33 lds   :   0 lpm   :   0 lsl   :   0 
-lsr   :   0 mov   :   1 movw  :   0 mul   :   0 muls  :   0 mulsu :   0 
-neg   :   0 nop   :   6 or    :   0 ori   :   0 out   :  12 pop   :  25 
-push  :  25 rcall :   0 ret   :   0 reti  :   0 rjmp  :   4 rol   :   2 
-ror   :   0 sbc   :   0 sbci  :   0 sbi   :  19 sbic  :   0 sbis  :   0 
-sbiw  :   6 sbr   :   0 sbrc  :   0 sbrs  :   0 sec   :   1 seh   :   0 
+ld    :   0 ldd   :   0 ldi   :  83 lds   :   0 lpm   :   0 lsl   :   0 
+lsr   :   0 mov   :   4 movw  :   0 mul   :   0 muls  :   0 mulsu :   0 
+neg   :   0 nop   :  16 or    :   0 ori   :   0 out   :  30 pop   :  65 
+push  :  65 rcall :   0 ret   :   0 reti  :   0 rjmp  :   7 rol   :   4 
+ror   :   0 sbc   :   0 sbci  :   0 sbi   :  38 sbic  :   0 sbis  :   0 
+sbiw  :  16 sbr   :   0 sbrc  :   0 sbrs  :   0 sec   :   2 seh   :   0 
 sei   :   0 sen   :   0 ser   :   0 ses   :   0 set   :   0 sev   :   0 
 sez   :   0 sleep :   0 spm   :   0 st    :   0 std   :   0 sts   :   0 
-sub   :   2 subi  :   0 swap  :   0 tst   :   0 wdr   :   0 
-Instructions used: 21 out of 113 (18.6%)
+sub   :   4 subi  :   0 swap  :   0 tst   :   0 wdr   :   0 
+Instructions used: 20 out of 113 (17.7%)
 
 "ATmega328P" memory use summary [bytes]:
 Segment   Begin    End      Code   Data   Used    Size   Use%
 ---------------------------------------------------------------
-[.cseg] 0x000000 0x000162    354      0    354   32768   1.1%
+[.cseg] 0x000000 0x000340    832      0    832   32768   2.5%
 [.dseg] 0x000100 0x000100      0      0      0    2048   0.0%
 [.eseg] 0x000000 0x000000      0      0      0    1024   0.0%
 

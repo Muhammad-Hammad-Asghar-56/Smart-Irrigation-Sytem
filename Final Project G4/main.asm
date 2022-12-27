@@ -10,7 +10,6 @@
 .include "div.inc"
 .include "lcd_Macros.inc"
 .org 0x00
-;
 
 ; Setting pins to Output for LCD
 	sbi DDRD,PD0 ; D0 pin of LCD
@@ -34,48 +33,52 @@
 	LCD_send_a_command 0x0C ; screen ON
 	sbi PORTB,PB5 ; Backlight ON
 
-
+;---------------------------------------------------------------------------------------------------------------------------
 loop:
 	LCD_send_a_command 0x01 ; clear the LCD
-	; take reading from the Sensor
+	LCD_send_a_character 'R'
+	LCD_send_a_character 'E'
+	LCD_send_a_character 'A'
+	LCD_send_a_character 'D'
+	LCD_send_a_character 'I'
+	LCD_send_a_character 'N'
+	LCD_send_a_character 'G'
+	LCD_send_a_character ':'
+
 	LDI r16,123
 	
-	; ON/OFF			Probe /Light
-	LDI r17,0b01111111 ; configure value from the sensor
-	CPI r17,0b01100100 ;jump if same or higher (AH >= 100)
-	Brsh LED_ON
-	;P
-	;	r
-	;		i
-	;			n				ON LED
-	;				t
-	; r15 remainder
-	; r16 result
-	; r16 dividend
-	; r17 divisor
-compare:	CPI r16,1
-			brlo loop
-			LDI r17,10
-			div	
-			call Print_On_LED
+	;					ON/OFF	Probe
+	CPI r16,100 ;jump if same or higher (AH >= 100)
+	Brlo CarryOn
+	;LDI r17, (1<<PINB3) ; load 00100000 into register R16
+	;OUT DDRB, r17 ; write register R16 value to DDRB register
+	;LDI r18, (1<<PINB3) ; load 00100000 into register R16
+	;OUT PORTB, r18 ; write register R16 value to PORTB register
+	
+CarryOn:	; check 100th Place
+	LDI r17,100
+	div
+	
+	LDI r20,48
+	add r16,r20
+	LCD_send_a_reg r16
 	
 	
-rjmp loop
+	; check 10th Place 
+	mov r16,r15
+	LDI r17,10
+	div
+	LDI r20,48
+	add r16,r20
+	LCD_send_a_reg r16
+	
 
-
-Print_On_LED:
-	; Sending Hello World to LCD
+	; check 1th Place 
 	LDI r20,48
 	add r15,r20
-	LCD_send_a_reg r15; 'H'
-	;LCD_send_a_command 0xC0 ; move curser to next line
-	LCD_send_a_command 0x13 ; move curser one step forward (another way to add space)
-	;delay 1000
-	call compare
+	LCD_send_a_reg r15
+	
+	delay 1000
+rjmp loop
 
-LED_ON: 
-	LDI r16, (1<<PINB3) ; load 00100000 into register R16
-	OUT DDRB, r16 ; write register R16 value to DDRB register
-	LDI r17, (1<<PINB3) ; load 00100000 into register R16
-	OUT PORTB, r17 ; write register R16 value to PORTB register
-	call compare
+;---------------------------------------------------------------------------------------------------------------------------
