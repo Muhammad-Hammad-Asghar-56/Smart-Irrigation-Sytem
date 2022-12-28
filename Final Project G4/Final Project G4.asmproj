@@ -67,10 +67,19 @@
     </ToolchainSettings>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Include="AsmFile2.asm">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="AsmFile3.asm">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="delayMacro.inc">
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="div.inc">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="lcd4bit.inc">
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="lcd_Macros.inc">

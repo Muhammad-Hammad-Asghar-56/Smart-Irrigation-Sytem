@@ -1,67 +1,76 @@
-;
-; Final Project G4.asm
-;
-; Created: 24/12/2022 4:29:57 pm
-; Author : M.H Asghar
-;
-
 .include "m328pdef.inc"
-.include "delayMacro.inc"
 .include "div.inc"
+.include "delayMacro.inc"
 .include "lcd_Macros.inc"
+
+;================================================================
+.def A = r16
+.def AH = r17
 .org 0x00
 
-; Setting pins to Output for LCD
-	sbi DDRD,PD0 ; D0 pin of LCD
-	sbi DDRD,PD1 ; D1
-	sbi DDRD,PD2 ; D2
-	sbi DDRD,PD3 ; D3
-	sbi DDRD,PD4 ; D4
-	sbi DDRD,PD5 ; D5
-	sbi DDRD,PD6 ; D6
-	sbi DDRD,PD7 ; D7
+; I/O Pins Configuration
+	SBI DDRB,5 ; Set PB5 pin for Output to LED
+	CBI PORTB,5 ; LED OFF
+; ADC Configuration
+	LDI A,0b11000111 ; [ADEN ADSC ADATE ADIF ADIE ADIE ADPS2 ADPS1 ADPS0]
+	STS ADCSRA,A
+	LDI A,0b01100000 ; [REFS1 REFS0 ADLAR – MUX3 MUX2 MUX1 MUX0]
+	STS ADMUX,A ; Select ADC0 (PC0) pin
+	SBI PORTC,PC0 ; Enable Pull-up Resistor
 
+    sbi DDRD,PD7 ; D4
+	sbi DDRD,PD6 ; D5
+	sbi DDRD,PD5 ; D6
+	sbi DDRD,PD4 ; D7
+	
 
 ;Setting LCD Mode selection pins
 	sbi DDRB,PB0 ; RS
 	sbi DDRB,PB1 ; E pin of LCD
-	;Setting LCD Backlight pin
-	sbi DDRB,PB5 ; BLA pin of LCD
-; LCD Init
-	LCD_send_a_command 0x01 ; sending all clear command
-	LCD_send_a_command 0x38 ; set LCD mode to 16*2 line LCD
-	LCD_send_a_command 0x0C ; screen ON
-	sbi PORTB,PB5 ; Backlight ON
-
-;---------------------------------------------------------------------------------------------------------------------------
-loop:
-	LCD_send_a_command 0x01 ; clear the LCD
-	LCD_send_a_character 'R'
-	LCD_send_a_character 'E'
-	LCD_send_a_character 'A'
-	LCD_send_a_character 'D'
-	LCD_send_a_character 'I'
-	LCD_send_a_character 'N'
-	LCD_send_a_character 'G'
-	LCD_send_a_character ':'
-
-	LDI r16,123
+    CBI   PORTB, 0    ;EN = 0
+   
+	LCD_init ;subroutine to initialize LCD
 	
-	;					ON/OFF	Probe
-	CPI r16,100 ;jump if same or higher (AH >= 100)
-	Brlo CarryOn
-	;LDI r17, (1<<PINB3) ; load 00100000 into register R16
-	;OUT DDRB, r17 ; write register R16 value to DDRB register
-	;LDI r18, (1<<PINB3) ; load 00100000 into register R16
-	;OUT PORTB, r18 ; write register R16 value to PORTB register
+again:
+	command_wrt 0x001
+    ;-----------------------------------------------------
+	LDS A,ADCSRA ; Start Analog to Digital Conversion
+	ORI A,(1<<ADSC)
+	STS ADCSRA,A
+	wait:
+	LDS A,ADCSRA ; wait for conversion to complete
+	sbrc A,ADSC
+	rjmp wait
+	LDS A,ADCL ; Must Read ADCL before ADCH
+	LDS AH,ADCH
+
+	cpi AH,200 ; compare LDR reading with our desired threshold
+	brsh LED_ON ; jump if same or higher (AH >= 200)
+	CBI PORTB,5 ; LED OFF
 	
+	rjmp CarryOn
+	LED_ON:
+	SBI PORTB,5 ; LED ON
+
+	
+	mov r16,AH
+		
 CarryOn:	; check 100th Place
+	data_wrt 'R'
+	data_wrt 'E'
+	data_wrt 'A'
+	data_wrt 'D'
+	data_wrt 'I'
+	data_wrt 'N'
+	data_wrt 'G'
+	data_wrt ':'
+	
 	LDI r17,100
 	div
 	
 	LDI r20,48
 	add r16,r20
-	LCD_send_a_reg r16
+	data_wrt_reg r16
 	
 	
 	; check 10th Place 
@@ -70,15 +79,16 @@ CarryOn:	; check 100th Place
 	div
 	LDI r20,48
 	add r16,r20
-	LCD_send_a_reg r16
+	data_wrt_reg r16
 	
 
 	; check 1th Place 
 	LDI r20,48
 	add r15,r20
-	LCD_send_a_reg r15
+	data_wrt_reg r15
 	
 	delay 1000
-rjmp loop
-
-;---------------------------------------------------------------------------------------------------------------------------
+	  
+	  
+	RJMP  again             ;jump to again for another run
+;================================================================

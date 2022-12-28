@@ -1,18 +1,18 @@
 
-AVRASM ver. 2.2.8  D:\Semesters\3rd Semester (DSA)\Assembly Language\COAL Final Project\Final Project G4\Final Project G4\main.asm Tue Dec 27 18:35:02 2022
+AVRASM ver. 2.2.8  D:\Semesters\3rd Semester (DSA)\Assembly Language\COAL Final Project\Final Project G4\Final Project G4\main.asm Wed Dec 28 08:20:47 2022
 
 [builtin](2): Including file 'C:/Program Files (x86)\Atmel\Studio\7.0\Packs\atmel\ATmega_DFP\1.7.374\avrasm\inc\m328Pdef.inc'
-D:\Semesters\3rd Semester (DSA)\Assembly Language\COAL Final Project\Final Project G4\Final Project G4\main.asm(8): Including file 'C:/Program Files (x86)\Atmel\Studio\7.0\Packs\atmel\ATmega_DFP\1.7.374\avrasm\inc\m328pdef.inc'
-D:\Semesters\3rd Semester (DSA)\Assembly Language\COAL Final Project\Final Project G4\Final Project G4\main.asm(9): Including file 'D:\Semesters\3rd Semester (DSA)\Assembly Language\COAL Final Project\Final Project G4\Final Project G4\delayMacro.inc'
-D:\Semesters\3rd Semester (DSA)\Assembly Language\COAL Final Project\Final Project G4\Final Project G4\main.asm(10): Including file 'D:\Semesters\3rd Semester (DSA)\Assembly Language\COAL Final Project\Final Project G4\Final Project G4\div.inc'
-D:\Semesters\3rd Semester (DSA)\Assembly Language\COAL Final Project\Final Project G4\Final Project G4\main.asm(11): Including file 'D:\Semesters\3rd Semester (DSA)\Assembly Language\COAL Final Project\Final Project G4\Final Project G4\lcd_Macros.inc'
+D:\Semesters\3rd Semester (DSA)\Assembly Language\COAL Final Project\Final Project G4\Final Project G4\main.asm(1): Including file 'C:/Program Files (x86)\Atmel\Studio\7.0\Packs\atmel\ATmega_DFP\1.7.374\avrasm\inc\m328pdef.inc'
+D:\Semesters\3rd Semester (DSA)\Assembly Language\COAL Final Project\Final Project G4\Final Project G4\main.asm(2): Including file 'D:\Semesters\3rd Semester (DSA)\Assembly Language\COAL Final Project\Final Project G4\Final Project G4\div.inc'
+D:\Semesters\3rd Semester (DSA)\Assembly Language\COAL Final Project\Final Project G4\Final Project G4\main.asm(3): Including file 'D:\Semesters\3rd Semester (DSA)\Assembly Language\COAL Final Project\Final Project G4\Final Project G4\delayMacro.inc'
+D:\Semesters\3rd Semester (DSA)\Assembly Language\COAL Final Project\Final Project G4\Final Project G4\main.asm(4): Including file 'D:\Semesters\3rd Semester (DSA)\Assembly Language\COAL Final Project\Final Project G4\Final Project G4\lcd_Macros.inc'
 [builtin](2): Including file 'C:/Program Files (x86)\Atmel\Studio\7.0\Packs\atmel\ATmega_DFP\1.7.374\avrasm\inc\m328Pdef.inc'
-D:\Semesters\3rd Semester (DSA)\Assembly Language\COAL Final Project\Final Project G4\Final Project G4\main.asm(8): Including file 'C:/Program Files (x86)\Atmel\Studio\7.0\Packs\atmel\ATmega_DFP\1.7.374\avrasm\inc\m328pdef.inc'
-D:\Semesters\3rd Semester (DSA)\Assembly Language\COAL Final Project\Final Project G4\Final Project G4\main.asm(9): Including file 'D:\Semesters\3rd Semester (DSA)\Assembly Language\COAL Final Project\Final Project G4\Final Project G4\delayMacro.inc'
-D:\Semesters\3rd Semester (DSA)\Assembly Language\COAL Final Project\Final Project G4\Final Project G4\main.asm(10): Including file 'D:\Semesters\3rd Semester (DSA)\Assembly Language\COAL Final Project\Final Project G4\Final Project G4\div.inc'
-D:\Semesters\3rd Semester (DSA)\Assembly Language\COAL Final Project\Final Project G4\Final Project G4\main.asm(11): Including file 'D:\Semesters\3rd Semester (DSA)\Assembly Language\COAL Final Project\Final Project G4\Final Project G4\lcd_Macros.inc'
+D:\Semesters\3rd Semester (DSA)\Assembly Language\COAL Final Project\Final Project G4\Final Project G4\main.asm(1): Including file 'C:/Program Files (x86)\Atmel\Studio\7.0\Packs\atmel\ATmega_DFP\1.7.374\avrasm\inc\m328pdef.inc'
+D:\Semesters\3rd Semester (DSA)\Assembly Language\COAL Final Project\Final Project G4\Final Project G4\main.asm(2): Including file 'D:\Semesters\3rd Semester (DSA)\Assembly Language\COAL Final Project\Final Project G4\Final Project G4\div.inc'
+D:\Semesters\3rd Semester (DSA)\Assembly Language\COAL Final Project\Final Project G4\Final Project G4\main.asm(3): Including file 'D:\Semesters\3rd Semester (DSA)\Assembly Language\COAL Final Project\Final Project G4\Final Project G4\delayMacro.inc'
+D:\Semesters\3rd Semester (DSA)\Assembly Language\COAL Final Project\Final Project G4\Final Project G4\main.asm(4): Including file 'D:\Semesters\3rd Semester (DSA)\Assembly Language\COAL Final Project\Final Project G4\Final Project G4\lcd_Macros.inc'
                                  
-                                 ;
+                                 .include "m328pdef.inc"
                                  
                                  ;***** Created: 2011-02-09 12:03 ******* Source: ATmega328P.xml **********
                                  ;*************************************************************************
@@ -993,13 +993,6 @@ D:\Semesters\3rd Semester (DSA)\Assembly Language\COAL Final Project\Final Proje
                                  
                                  ; ***** END OF FILE ******************************************************
                                  
-                                 ; Final Project G4.asm
-                                 ;
-                                 ; Created: 24/12/2022 4:29:57 pm
-                                 ; Author : M.H Asghar
-                                 ;
-                                 
-                                 .include "m328pdef.inc"
                                  
                                  ;***** Created: 2011-02-09 12:03 ******* Source: ATmega328P.xml **********
                                  ;*************************************************************************
@@ -1043,33 +1036,6 @@ D:\Semesters\3rd Semester (DSA)\Assembly Language\COAL Final Project\Final Proje
                                  #endif  /* _M328PDEF_INC_ */
                                  
                                  ; ***** END OF FILE ******************************************************
-                                 .include "delayMacro.inc"
-                                 
-                                 ;* macro: delay
-                                 ;*
-                                 ;* description: creates a delay for the specified number of milliseconds
-                                 ;*
-                                 ;* inputs: @0 - number of milliseconds to delay for
-                                 ;*
-                                 ;* registers modified: none
-                                 ;***********************************************************************
-                                 .macro delay
-                                 	push r18
-                                 	push r24
-                                 	push r25
-                                 	ldi r18,@0/10
-                                 L1:	
-                                 	ldi r24,LOW(39998) ; intialize inner loop count in inner
-                                 	ldi r25,HIGH(39998) ; loop high and low registers
-                                 L2:
-                                 	sbiw r24,1 ; decrement inner loop registers
-                                 	brne L2 ; branch to L2 if iLoop registers != 0
-                                 	dec r18 ; decrement outer loop register
-                                 	brne L1 ; branch to L1 if outer loop register != 0
-                                 	nop ; no operation
-                                 	pop r25
-                                 	pop r24
-                                 	pop r18
                                  .include "div.inc"
                                  
                                  ;***************************************************************************
@@ -1111,457 +1077,583 @@ D:\Semesters\3rd Semester (DSA)\Assembly Language\COAL Final Project\Final Proje
                                  	exit:
                                  		pop r18
                                  .endmacro
+                                 .include "delayMacro.inc"
+                                 
+                                 ;* macro: delay
+                                 ;*
+                                 ;* description: creates a delay for the specified number of milliseconds
+                                 ;*
+                                 ;* inputs: @0 - number of milliseconds to delay for
+                                 ;*
+                                 ;* registers modified: none
+                                 ;***********************************************************************
+                                 .macro delay
+                                 	push r18
+                                 	push r24
+                                 	push r25
+                                 	ldi r18,@0/10
+                                 L1:	
+                                 	ldi r24,LOW(39998) ; intialize inner loop count in inner
+                                 	ldi r25,HIGH(39998) ; loop high and low registers
+                                 L2:
+                                 	sbiw r24,1 ; decrement inner loop registers
+                                 	brne L2 ; branch to L2 if iLoop registers != 0
+                                 	dec r18 ; decrement outer loop register
+                                 	brne L1 ; branch to L1 if outer loop register != 0
+                                 	nop ; no operation
+                                 	pop r25
+                                 	pop r24
+                                 	pop r18
                                  .include "lcd_Macros.inc"
                                  
-                                 	PUSH r16
-                                 	LDI r16,@0 ; receives the command
-                                 	OUT PORTD,r16 ; Set the PD0 to PD7 pins according to command bits
-                                 	CBI PORTB, PB0 ; set RS pin to LOW (set LCD mode to "Command Mode")
-                                 	SBI PORTB, PB1 ; set E pin to HIGH (set LCD to receive the command)
-                                 	delay 50
-                                 	CBI PORTB, PB1 ; set E pin to LOW (set LCD to process the command)
-                                 	LDI r16,0x00
-                                 	OUT PORTD,r16 ; clear the PD0 to PD7 pins after sending the command
-                                 	POP r16
+                                       PUSH  R16
+                                       LDI   R16, @0
+                                       MOV   R27, R16
+                                       ANDI  R27, 0xF0         ;mask low nibble & keep high nibble
+                                       OUT   PORTD, R27        ;o/p high nibble to port D
+                                       CBI   PORTB, 1          ;RS = 0 for command
+                                       SBI   PORTB, 0          ;EN = 1
+                                       delay 30
+                                       CBI   PORTB, 0          ;EN = 0 for H-to-L pulse
+                                       delay 30
+                                       ;----------------------------------------------------
+                                       MOV   R27, R16
+                                       SWAP  R27               ;swap nibbles
+                                       ANDI  R27, 0xF0         ;mask low nibble & keep high nibble
+                                       OUT   PORTD, R27        ;o/p high nibble to port D
+                                       SBI   PORTB, 0          ;EN = 1
+                                       delay 30
+                                       CBI   PORTB, 0          ;EN = 0 for H-to-L pulse
+                                       delay 30
+                                 	  POP R16
                                  .endmacro
                                  
-                                 
-                                 .macro LCD_send_a_character
-                                 	PUSH r16
-                                 	LDI r16,@0 ; receives the character
-                                 	OUT PORTD,r16 ; Set the PD0 to PD7 pins according to command bits
-                                 	SBI PORTB, PB0 ; set RS pin to HIGH (set LCD mode to "Data Mode")
-                                 	SBI PORTB, PB1 ; set E pin to HIGH (set LCD to receive the command)
-                                 	delay 30
-                                 	CBI PORTB, PB1 ; set E pin to LOW (set LCD to process the command)
-                                 	LDI r16,0x00
-                                 	OUT PORTD,r16 ; clear the PD0 to PD7 pins after sending the command
-                                 	POP r16
+                                 .macro LCD_init
+                                       command_wrt 0x33       ;send to command register
+                                       delay 30
+                                       command_wrt 0x32
+                                       delay 30
+                                       command_wrt 0x28
+                                       delay 30
+                                       command_wrt 0x0C
+                                       command_wrt 0x01
+                                       delay 30
+                                       command_wrt 0x06
                                  .endmacro
                                  
+                                 .macro data_wrt
+                                       PUSH  R16
+                                       LDI   R16, @0
+                                       MOV   R27, R16
+                                       ANDI  R27, 0xF0         ;mask low nibble & keep high nibble
+                                       OUT   PORTD, R27        ;o/p high nibble to port D
+                                       SBI   PORTB, 1          ;RS = 1 for data
+                                       SBI   PORTB, 0          ;EN = 1
+                                       delay 30
+                                       CBI   PORTB, 0          ;EN = 0 for H-to-L pulse
+                                       delay 30
+                                       ;----------------------------------------------------
+                                       MOV   R27, R16
+                                       SWAP  R27               ;swap nibbles
+                                       ANDI  R27, 0xF0         ;mask low nibble & keep high nibble
+                                       OUT   PORTD, R27        ;o/p high nibble to port D
+                                       SBI   PORTB, 0          ;EN = 1
+                                       delay 30
+                                       CBI   PORTB, 0          ;EN = 0 for H-to-L pulse
+                                       delay 30
+                                 	  POP R16
+                                 .endmacro
                                  
-                                 .macro LCD_send_a_REG
-                                 	PUSH r16
-                                 	MOV r16,@0					; receives the character
-                                 	OUT PORTD, r16				; Set the PD0 to PD7 pins according to command bits
-                                 	SBI PORTB, PB0				; Set RS pin to HIGH (set LCD mode to "Data Mode")
-                                 	SBI PORTB, PB1				; Set E pin to HIGH (set LCD to receive the command)
-                                 	delay 30
-                                 	CBI PORTB, PB1				; Set E pin to LOW (set LCD to process the command)
-                                 	LDI r16,0x00
-                                 	OUT PORTD, r16				; Clear the PD0 to PD7 pins after sending the command)
+                                 .macro data_wrt_reg
+                                       PUSH  R16
+                                       MOV   R16, @0
+                                       MOV   R27, R16
+                                       ANDI  R27, 0xF0         ;mask low nibble & keep high nibble
+                                       OUT   PORTD, R27        ;o/p high nibble to port D
+                                       SBI   PORTB, 1          ;RS = 1 for data
+                                       SBI   PORTB, 0          ;EN = 1
+                                       delay 30
+                                       CBI   PORTB, 0          ;EN = 0 for H-to-L pulse
+                                       delay 30
+                                       ;----------------------------------------------------
+                                       MOV   R27, R16
+                                       SWAP  R27               ;swap nibbles
+                                       ANDI  R27, 0xF0         ;mask low nibble & keep high nibble
+                                       OUT   PORTD, R27        ;o/p high nibble to port D
+                                       SBI   PORTB, 0          ;EN = 1
+                                       delay 30
+                                       CBI   PORTB, 0          ;EN = 0 for H-to-L pulse
+                                       delay 30
+                                 	  POP R16
+                                 .endmacro
                                  
-                                 	POP r16
+                                 .macro disp_message
+                                       data_wrt 'A'
+                                       delay 30
+                                       data_wrt 's'
+                                       delay 30
+                                       data_wrt 's'
+                                       delay 30
+                                       data_wrt 'e'
+                                       delay 30
+                                       data_wrt 'm'
+                                       delay 30
+                                       data_wrt 'b'
+                                       delay 30
+                                       data_wrt 'l'
+                                       delay 30
+                                       data_wrt 'y'
+                                       delay 30
+                                       ;----------------
+                                       data_wrt ' '
+                                       ;----------------
+                                       data_wrt 'v'
+                                       delay 30
+                                       data_wrt 'i'
+                                       delay 30
+                                       data_wrt 'a'
+                                       delay 30
+                                       ;----------------
+                                       data_wrt ' '
+                                       ;----------------
+                                       data_wrt 'U'
+                                       delay 30
+                                       data_wrt 'N'
+                                       delay 30
+                                       data_wrt 'O'
+                                       delay 30
+                                       ;----------------
+                                       command_wrt 0xC0
+                                       delay 30
+                                       ;----------------
+                                       data_wrt 'P'
+                                       delay 30
+                                       data_wrt 'r'
+                                       delay 30
+                                       data_wrt 'o'
+                                       delay 30
+                                       data_wrt 'g'
+                                       delay 30
+                                       data_wrt 'r'
+                                       delay 30
+                                       data_wrt 'a'
+                                       delay 30
+                                       data_wrt 'm'
+                                       delay 30
+                                       data_wrt 'm'
+                                       delay 30
+                                       data_wrt 'i'
+                                       delay 30
+                                       data_wrt 'n'
+                                       delay 30
+                                       data_wrt 'g'
+                                       delay 30
+                                       ;----------------
+                                       data_wrt ' '
+                                       ;----------------
+                                       data_wrt 'L'
+                                       delay 30
+                                       data_wrt 'C'
+                                       delay 30
+                                       data_wrt 'D'
+                                       delay 30
+                                       data_wrt '!'
+                                       ;----------------
+                                       delay 30
+                                 
+                                 ;================================================================
+                                 .def A = r16
+                                 .def AH = r17
                                  .org 0x00
                                  
-                                 ; Setting pins to Output for LCD
-000000 9a50                      	sbi DDRD,PD0 ; D0 pin of LCD
-000001 9a51                      	sbi DDRD,PD1 ; D1
-000002 9a52                      	sbi DDRD,PD2 ; D2
-000003 9a53                      	sbi DDRD,PD3 ; D3
-000004 9a54                      	sbi DDRD,PD4 ; D4
-000005 9a55                      	sbi DDRD,PD5 ; D5
-000006 9a56                      	sbi DDRD,PD6 ; D6
-000007 9a57                      	sbi DDRD,PD7 ; D7
+                                 ; I/O Pins Configuration
+000000 9a25                      	SBI DDRB,5 ; Set PB5 pin for Output to LED
+000001 982d                      	CBI PORTB,5 ; LED OFF
+                                 ; ADC Configuration
+000002 ec07                      	LDI A,0b11000111 ; [ADEN ADSC ADATE ADIF ADIE ADIE ADPS2 ADPS1 ADPS0]
+000003 9300 007a                 	STS ADCSRA,A
+000005 e600                      	LDI A,0b01100000 ; [REFS1 REFS0 ADLAR – MUX3 MUX2 MUX1 MUX0]
+000006 9300 007c                 	STS ADMUX,A ; Select ADC0 (PC0) pin
+000008 9a40                      	SBI PORTC,PC0 ; Enable Pull-up Resistor
                                  
+000009 9a57                          sbi DDRD,PD7 ; D4
+00000a 9a56                      	sbi DDRD,PD6 ; D5
+00000b 9a55                      	sbi DDRD,PD5 ; D6
+00000c 9a54                      	sbi DDRD,PD4 ; D7
+                                 	
                                  
                                  ;Setting LCD Mode selection pins
-000008 9a20                      	sbi DDRB,PB0 ; RS
-000009 9a21                      	sbi DDRB,PB1 ; E pin of LCD
-                                 	;Setting LCD Backlight pin
-00000a 9a25                      	sbi DDRB,PB5 ; BLA pin of LCD
-                                 ; LCD Init
-00000b 930f
-00000c e001
-00000d b90b
-00000e 9828
-00000f 9a29
-000010 932f
-000011 938f
-000012 939f
-000013 e025
-000014 e38e
-000015 e99c
-000016 9701
-000017 f7f1
-000018 952a
-000019 f7d1
-00001a 0000
-00001b 919f
-00001c 918f
-00001d 912f
-00001e 9829
-00001f e000
-000020 b90b
-000021 910f                      	LCD_send_a_command 0x01 ; sending all clear command
-000022 930f
-000023 e308
-000024 b90b
+00000d 9a20                      	sbi DDRB,PB0 ; RS
+00000e 9a21                      	sbi DDRB,PB1 ; E pin of LCD
+00000f 9828                          CBI   PORTB, 0    ;EN = 0
+                                    
+000010 930f
+000011 e303
+000012 2fb0
+000013 7fb0
+000014 b9bb
+000015 9829
+000016 9a28
+000017 932f
+000018 938f
+000019 939f
+00001a e023
+00001b e38e
+00001c e99c
+00001d 9701
+00001e f7f1
+00001f 952a
+000020 f7d1
+000021 0000
+000022 919f
+000023 918f
+000024 912f
 000025 9828
-000026 9a29
-000027 932f
-000028 938f
-000029 939f
-00002a e025
-00002b e38e
-00002c e99c
-00002d 9701
-00002e f7f1
-00002f 952a
-000030 f7d1
-000031 0000
-000032 919f
-000033 918f
-000034 912f
-000035 9829
-000036 e000
-000037 b90b
-000038 910f                      	LCD_send_a_command 0x38 ; set LCD mode to 16*2 line LCD
-000039 930f
-00003a e00c
-00003b b90b
-00003c 9828
-00003d 9a29
-00003e 932f
-00003f 938f
-000040 939f
-000041 e025
-000042 e38e
-000043 e99c
-000044 9701
-000045 f7f1
-000046 952a
-000047 f7d1
-000048 0000
-000049 919f
-00004a 918f
-00004b 912f
-00004c 9829
-00004d e000
-00004e b90b
-00004f 910f                      	LCD_send_a_command 0x0C ; screen ON
-000050 9a2d                      	sbi PORTB,PB5 ; Backlight ON
-                                 
-                                 ;---------------------------------------------------------------------------------------------------------------------------
-                                 loop:
-000051 930f
-000052 e001
-000053 b90b
-000054 9828
-000055 9a29
-000056 932f
-000057 938f
-000058 939f
-000059 e025
-00005a e38e
-00005b e99c
-00005c 9701
-00005d f7f1
-00005e 952a
-00005f f7d1
-000060 0000
-000061 919f
-000062 918f
-000063 912f
-000064 9829
-000065 e000
-000066 b90b
-000067 910f                      	LCD_send_a_command 0x01 ; clear the LCD
-000068 930f
-000069 e502
-00006a b90b
+000026 932f
+000027 938f
+000028 939f
+000029 e023
+00002a e38e
+00002b e99c
+00002c 9701
+00002d f7f1
+00002e 952a
+00002f f7d1
+000030 0000
+000031 919f
+000032 918f
+000033 912f
+000034 2fb0
+000035 95b2
+000036 7fb0
+000037 b9bb
+000038 9a28
+000039 932f
+00003a 938f
+00003b 939f
+00003c e023
+00003d e38e
+00003e e99c
+00003f 9701
+000040 f7f1
+000041 952a
+000042 f7d1
+000043 0000
+000044 919f
+000045 918f
+000046 912f
+000047 9828
+000048 932f
+000049 938f
+00004a 939f
+00004b e023
+00004c e38e
+00004d e99c
+00004e 9701
+00004f f7f1
+000050 952a
+000051 f7d1
+000052 0000
+000053 919f
+000054 918f
+000055 912f
+000056 910f
+000057 932f
+000058 938f
+000059 939f
+00005a e023
+00005b e38e
+00005c e99c
+00005d 9701
+00005e f7f1
+00005f 952a
+000060 f7d1
+000061 0000
+000062 919f
+000063 918f
+000064 912f
+000065 930f
+000066 e302
+000067 2fb0
+000068 7fb0
+000069 b9bb
+00006a 9829
 00006b 9a28
-00006c 9a29
-00006d 932f
-00006e 938f
-00006f 939f
-000070 e023
-000071 e38e
-000072 e99c
-000073 9701
-000074 f7f1
-000075 952a
-000076 f7d1
-000077 0000
-000078 919f
-000079 918f
-00007a 912f
-00007b 9829
-00007c e000
-00007d b90b
-00007e 910f                      	LCD_send_a_character 'R'
-00007f 930f
-000080 e405
-000081 b90b
-000082 9a28
-000083 9a29
-000084 932f
-000085 938f
-000086 939f
-000087 e023
-000088 e38e
-000089 e99c
-00008a 9701
-00008b f7f1
-00008c 952a
-00008d f7d1
-00008e 0000
-00008f 919f
-000090 918f
-000091 912f
-000092 9829
-000093 e000
-000094 b90b
-000095 910f                      	LCD_send_a_character 'E'
-000096 930f
-000097 e401
-000098 b90b
-000099 9a28
-00009a 9a29
-00009b 932f
-00009c 938f
-00009d 939f
-00009e e023
-00009f e38e
-0000a0 e99c
-0000a1 9701
-0000a2 f7f1
-0000a3 952a
-0000a4 f7d1
-0000a5 0000
-0000a6 919f
-0000a7 918f
-0000a8 912f
-0000a9 9829
-0000aa e000
-0000ab b90b
-0000ac 910f                      	LCD_send_a_character 'A'
-0000ad 930f
-0000ae e404
-0000af b90b
-0000b0 9a28
-0000b1 9a29
-0000b2 932f
-0000b3 938f
-0000b4 939f
-0000b5 e023
-0000b6 e38e
-0000b7 e99c
-0000b8 9701
-0000b9 f7f1
-0000ba 952a
-0000bb f7d1
-0000bc 0000
-0000bd 919f
-0000be 918f
-0000bf 912f
-0000c0 9829
-0000c1 e000
-0000c2 b90b
-0000c3 910f                      	LCD_send_a_character 'D'
-0000c4 930f
-0000c5 e409
-0000c6 b90b
-0000c7 9a28
-0000c8 9a29
-0000c9 932f
-0000ca 938f
-0000cb 939f
-0000cc e023
-0000cd e38e
-0000ce e99c
-0000cf 9701
-0000d0 f7f1
-0000d1 952a
-0000d2 f7d1
-0000d3 0000
-0000d4 919f
-0000d5 918f
-0000d6 912f
-0000d7 9829
-0000d8 e000
-0000d9 b90b
-0000da 910f                      	LCD_send_a_character 'I'
-0000db 930f
-0000dc e40e
-0000dd b90b
-0000de 9a28
-0000df 9a29
-0000e0 932f
-0000e1 938f
-0000e2 939f
-0000e3 e023
-0000e4 e38e
-0000e5 e99c
-0000e6 9701
-0000e7 f7f1
-0000e8 952a
-0000e9 f7d1
-0000ea 0000
-0000eb 919f
-0000ec 918f
-0000ed 912f
-0000ee 9829
-0000ef e000
-0000f0 b90b
-0000f1 910f                      	LCD_send_a_character 'N'
-0000f2 930f
-0000f3 e407
-0000f4 b90b
-0000f5 9a28
-0000f6 9a29
-0000f7 932f
-0000f8 938f
-0000f9 939f
-0000fa e023
-0000fb e38e
-0000fc e99c
-0000fd 9701
-0000fe f7f1
-0000ff 952a
-000100 f7d1
-000101 0000
-000102 919f
-000103 918f
-000104 912f
-000105 9829
-000106 e000
-000107 b90b
-000108 910f                      	LCD_send_a_character 'G'
-000109 930f
-00010a e30a
-00010b b90b
-00010c 9a28
-00010d 9a29
-00010e 932f
-00010f 938f
-000110 939f
-000111 e023
-000112 e38e
-000113 e99c
-000114 9701
-000115 f7f1
-000116 952a
-000117 f7d1
-000118 0000
-000119 919f
-00011a 918f
-00011b 912f
-00011c 9829
-00011d e000
-00011e b90b
-00011f 910f                      	LCD_send_a_character ':'
-                                 
-000120 e70b                      	LDI r16,123
-                                 	
-                                 	;					ON/OFF	Probe
-000121 3604                      	CPI r16,100 ;jump if same or higher (AH >= 100)
-000122 f000                      	Brlo CarryOn
-                                 	;LDI r17, (1<<PINB3) ; load 00100000 into register R16
-                                 	;OUT DDRB, r17 ; write register R16 value to DDRB register
-                                 	;LDI r18, (1<<PINB3) ; load 00100000 into register R16
-                                 	;OUT PORTB, r18 ; write register R16 value to PORTB register
-                                 	
-                                 CarryOn:	; check 100th Place
-000123 e614                      	LDI r17,100
-000124 932f
-000125 18ff
-000126 e029
-000127 1f00
-000128 952a
-000129 f409
-00012a c008
-00012b 1cff
-00012c 1af1
-00012d f418
-00012e 0ef1
-00012f 9488
-000130 cff6
-000131 9408
-000132 cff4
-000133 912f                      	div
-                                 	
-000134 e340                      	LDI r20,48
-000135 0f04                      	add r16,r20
-000136 930f
-000137 2f00
-000138 b90b
-000139 9a28
-00013a 9a29
-00013b 932f
-00013c 938f
-00013d 939f
-00013e e023
-00013f e38e
-000140 e99c
-000141 9701
-000142 f7f1
-000143 952a
-000144 f7d1
-000145 0000
-000146 919f
-000147 918f
-000148 912f
-000149 9829
-00014a e000
-00014b b90b
-00014c 910f                      	LCD_send_a_reg r16
-                                 	
-                                 	
-                                 	; check 10th Place 
-00014d 2d0f                      	mov r16,r15
-00014e e01a                      	LDI r17,10
-00014f 932f
-000150 18ff
-000151 e029
-000152 1f00
-000153 952a
-000154 f409
-000155 c008
-000156 1cff
-000157 1af1
-000158 f418
-000159 0ef1
-00015a 9488
-00015b cff6
-00015c 9408
-00015d cff4
-00015e 912f                      	div
-00015f e340                      	LDI r20,48
-000160 0f04                      	add r16,r20
-000161 930f
-000162 2f00
-000163 b90b
-000164 9a28
-000165 9a29
-000166 932f
-000167 938f
-000168 939f
-000169 e023
-00016a e38e
-00016b e99c
-00016c 9701
-00016d f7f1
-00016e 952a
-00016f f7d1
-000170 0000
-000171 919f
-000172 918f
-000173 912f
-000174 9829
-000175 e000
-000176 b90b
-000177 910f                      	LCD_send_a_reg r16
-                                 	
-                                 
-                                 	; check 1th Place 
-000178 e340                      	LDI r20,48
-000179 0ef4                      	add r15,r20
-00017a 930f
-00017b 2d0f
-00017c b90b
-00017d 9a28
-00017e 9a29
+00006c 932f
+00006d 938f
+00006e 939f
+00006f e023
+000070 e38e
+000071 e99c
+000072 9701
+000073 f7f1
+000074 952a
+000075 f7d1
+000076 0000
+000077 919f
+000078 918f
+000079 912f
+00007a 9828
+00007b 932f
+00007c 938f
+00007d 939f
+00007e e023
+00007f e38e
+000080 e99c
+000081 9701
+000082 f7f1
+000083 952a
+000084 f7d1
+000085 0000
+000086 919f
+000087 918f
+000088 912f
+000089 2fb0
+00008a 95b2
+00008b 7fb0
+00008c b9bb
+00008d 9a28
+00008e 932f
+00008f 938f
+000090 939f
+000091 e023
+000092 e38e
+000093 e99c
+000094 9701
+000095 f7f1
+000096 952a
+000097 f7d1
+000098 0000
+000099 919f
+00009a 918f
+00009b 912f
+00009c 9828
+00009d 932f
+00009e 938f
+00009f 939f
+0000a0 e023
+0000a1 e38e
+0000a2 e99c
+0000a3 9701
+0000a4 f7f1
+0000a5 952a
+0000a6 f7d1
+0000a7 0000
+0000a8 919f
+0000a9 918f
+0000aa 912f
+0000ab 910f
+0000ac 932f
+0000ad 938f
+0000ae 939f
+0000af e023
+0000b0 e38e
+0000b1 e99c
+0000b2 9701
+0000b3 f7f1
+0000b4 952a
+0000b5 f7d1
+0000b6 0000
+0000b7 919f
+0000b8 918f
+0000b9 912f
+0000ba 930f
+0000bb e208
+0000bc 2fb0
+0000bd 7fb0
+0000be b9bb
+0000bf 9829
+0000c0 9a28
+0000c1 932f
+0000c2 938f
+0000c3 939f
+0000c4 e023
+0000c5 e38e
+0000c6 e99c
+0000c7 9701
+0000c8 f7f1
+0000c9 952a
+0000ca f7d1
+0000cb 0000
+0000cc 919f
+0000cd 918f
+0000ce 912f
+0000cf 9828
+0000d0 932f
+0000d1 938f
+0000d2 939f
+0000d3 e023
+0000d4 e38e
+0000d5 e99c
+0000d6 9701
+0000d7 f7f1
+0000d8 952a
+0000d9 f7d1
+0000da 0000
+0000db 919f
+0000dc 918f
+0000dd 912f
+0000de 2fb0
+0000df 95b2
+0000e0 7fb0
+0000e1 b9bb
+0000e2 9a28
+0000e3 932f
+0000e4 938f
+0000e5 939f
+0000e6 e023
+0000e7 e38e
+0000e8 e99c
+0000e9 9701
+0000ea f7f1
+0000eb 952a
+0000ec f7d1
+0000ed 0000
+0000ee 919f
+0000ef 918f
+0000f0 912f
+0000f1 9828
+0000f2 932f
+0000f3 938f
+0000f4 939f
+0000f5 e023
+0000f6 e38e
+0000f7 e99c
+0000f8 9701
+0000f9 f7f1
+0000fa 952a
+0000fb f7d1
+0000fc 0000
+0000fd 919f
+0000fe 918f
+0000ff 912f
+000100 910f
+000101 932f
+000102 938f
+000103 939f
+000104 e023
+000105 e38e
+000106 e99c
+000107 9701
+000108 f7f1
+000109 952a
+00010a f7d1
+00010b 0000
+00010c 919f
+00010d 918f
+00010e 912f
+00010f 930f
+000110 e00c
+000111 2fb0
+000112 7fb0
+000113 b9bb
+000114 9829
+000115 9a28
+000116 932f
+000117 938f
+000118 939f
+000119 e023
+00011a e38e
+00011b e99c
+00011c 9701
+00011d f7f1
+00011e 952a
+00011f f7d1
+000120 0000
+000121 919f
+000122 918f
+000123 912f
+000124 9828
+000125 932f
+000126 938f
+000127 939f
+000128 e023
+000129 e38e
+00012a e99c
+00012b 9701
+00012c f7f1
+00012d 952a
+00012e f7d1
+00012f 0000
+000130 919f
+000131 918f
+000132 912f
+000133 2fb0
+000134 95b2
+000135 7fb0
+000136 b9bb
+000137 9a28
+000138 932f
+000139 938f
+00013a 939f
+00013b e023
+00013c e38e
+00013d e99c
+00013e 9701
+00013f f7f1
+000140 952a
+000141 f7d1
+000142 0000
+000143 919f
+000144 918f
+000145 912f
+000146 9828
+000147 932f
+000148 938f
+000149 939f
+00014a e023
+00014b e38e
+00014c e99c
+00014d 9701
+00014e f7f1
+00014f 952a
+000150 f7d1
+000151 0000
+000152 919f
+000153 918f
+000154 912f
+000155 910f
+000156 930f
+000157 e001
+000158 2fb0
+000159 7fb0
+00015a b9bb
+00015b 9829
+00015c 9a28
+00015d 932f
+00015e 938f
+00015f 939f
+000160 e023
+000161 e38e
+000162 e99c
+000163 9701
+000164 f7f1
+000165 952a
+000166 f7d1
+000167 0000
+000168 919f
+000169 918f
+00016a 912f
+00016b 9828
+00016c 932f
+00016d 938f
+00016e 939f
+00016f e023
+000170 e38e
+000171 e99c
+000172 9701
+000173 f7f1
+000174 952a
+000175 f7d1
+000176 0000
+000177 919f
+000178 918f
+000179 912f
+00017a 2fb0
+00017b 95b2
+00017c 7fb0
+00017d b9bb
+00017e 9a28
 00017f 932f
 000180 938f
 000181 939f
@@ -1576,28 +1668,1051 @@ D:\Semesters\3rd Semester (DSA)\Assembly Language\COAL Final Project\Final Proje
 00018a 919f
 00018b 918f
 00018c 912f
-00018d 9829
-00018e e000
-00018f b90b
-000190 910f                      	LCD_send_a_reg r15
+00018d 9828
+00018e 932f
+00018f 938f
+000190 939f
+000191 e023
+000192 e38e
+000193 e99c
+000194 9701
+000195 f7f1
+000196 952a
+000197 f7d1
+000198 0000
+000199 919f
+00019a 918f
+00019b 912f
+00019c 910f
+00019d 932f
+00019e 938f
+00019f 939f
+0001a0 e023
+0001a1 e38e
+0001a2 e99c
+0001a3 9701
+0001a4 f7f1
+0001a5 952a
+0001a6 f7d1
+0001a7 0000
+0001a8 919f
+0001a9 918f
+0001aa 912f
+0001ab 930f
+0001ac e006
+0001ad 2fb0
+0001ae 7fb0
+0001af b9bb
+0001b0 9829
+0001b1 9a28
+0001b2 932f
+0001b3 938f
+0001b4 939f
+0001b5 e023
+0001b6 e38e
+0001b7 e99c
+0001b8 9701
+0001b9 f7f1
+0001ba 952a
+0001bb f7d1
+0001bc 0000
+0001bd 919f
+0001be 918f
+0001bf 912f
+0001c0 9828
+0001c1 932f
+0001c2 938f
+0001c3 939f
+0001c4 e023
+0001c5 e38e
+0001c6 e99c
+0001c7 9701
+0001c8 f7f1
+0001c9 952a
+0001ca f7d1
+0001cb 0000
+0001cc 919f
+0001cd 918f
+0001ce 912f
+0001cf 2fb0
+0001d0 95b2
+0001d1 7fb0
+0001d2 b9bb
+0001d3 9a28
+0001d4 932f
+0001d5 938f
+0001d6 939f
+0001d7 e023
+0001d8 e38e
+0001d9 e99c
+0001da 9701
+0001db f7f1
+0001dc 952a
+0001dd f7d1
+0001de 0000
+0001df 919f
+0001e0 918f
+0001e1 912f
+0001e2 9828
+0001e3 932f
+0001e4 938f
+0001e5 939f
+0001e6 e023
+0001e7 e38e
+0001e8 e99c
+0001e9 9701
+0001ea f7f1
+0001eb 952a
+0001ec f7d1
+0001ed 0000
+0001ee 919f
+0001ef 918f
+0001f0 912f
+0001f1 910f                      	LCD_init ;subroutine to initialize LCD
                                  	
-000191 932f
-000192 938f
-000193 939f
-000194 e624
-000195 e38e
-000196 e99c
-000197 9701
-000198 f7f1
-000199 952a
-00019a f7d1
-00019b 0000
-00019c 919f
-00019d 918f
-00019e 912f                      	delay 1000
-00019f ceb1                      rjmp loop
+                                 again:
+0001f2 930f
+0001f3 e001
+0001f4 2fb0
+0001f5 7fb0
+0001f6 b9bb
+0001f7 9829
+0001f8 9a28
+0001f9 932f
+0001fa 938f
+0001fb 939f
+0001fc e023
+0001fd e38e
+0001fe e99c
+0001ff 9701
+000200 f7f1
+000201 952a
+000202 f7d1
+000203 0000
+000204 919f
+000205 918f
+000206 912f
+000207 9828
+000208 932f
+000209 938f
+00020a 939f
+00020b e023
+00020c e38e
+00020d e99c
+00020e 9701
+00020f f7f1
+000210 952a
+000211 f7d1
+000212 0000
+000213 919f
+000214 918f
+000215 912f
+000216 2fb0
+000217 95b2
+000218 7fb0
+000219 b9bb
+00021a 9a28
+00021b 932f
+00021c 938f
+00021d 939f
+00021e e023
+00021f e38e
+000220 e99c
+000221 9701
+000222 f7f1
+000223 952a
+000224 f7d1
+000225 0000
+000226 919f
+000227 918f
+000228 912f
+000229 9828
+00022a 932f
+00022b 938f
+00022c 939f
+00022d e023
+00022e e38e
+00022f e99c
+000230 9701
+000231 f7f1
+000232 952a
+000233 f7d1
+000234 0000
+000235 919f
+000236 918f
+000237 912f
+000238 910f                      	command_wrt 0x001
+                                     ;-----------------------------------------------------
+000239 9100 007a                 	LDS A,ADCSRA ; Start Analog to Digital Conversion
+00023b 6400                      	ORI A,(1<<ADSC)
+00023c 9300 007a                 	STS ADCSRA,A
+                                 	wait:
+00023e 9100 007a                 	LDS A,ADCSRA ; wait for conversion to complete
+000240 fd06                      	sbrc A,ADSC
+000241 cffc                      	rjmp wait
+000242 9100 0078                 	LDS A,ADCL ; Must Read ADCL before ADCH
+000244 9110 0079                 	LDS AH,ADCH
                                  
-                                 ;---------------------------------------------------------------------------------------------------------------------------
+000246 3c18                      	cpi AH,200 ; compare LDR reading with our desired threshold
+000247 f410                      	brsh LED_ON ; jump if same or higher (AH >= 200)
+000248 982d                      	CBI PORTB,5 ; LED OFF
+                                 	
+000249 c002                      	rjmp CarryOn
+                                 	LED_ON:
+00024a 9a2d                      	SBI PORTB,5 ; LED ON
+                                 
+                                 	
+00024b 2f01                      	mov r16,AH
+                                 		
+                                 CarryOn:	; check 100th Place
+00024c 930f
+00024d e502
+00024e 2fb0
+00024f 7fb0
+000250 b9bb
+000251 9a29
+000252 9a28
+000253 932f
+000254 938f
+000255 939f
+000256 e023
+000257 e38e
+000258 e99c
+000259 9701
+00025a f7f1
+00025b 952a
+00025c f7d1
+00025d 0000
+00025e 919f
+00025f 918f
+000260 912f
+000261 9828
+000262 932f
+000263 938f
+000264 939f
+000265 e023
+000266 e38e
+000267 e99c
+000268 9701
+000269 f7f1
+00026a 952a
+00026b f7d1
+00026c 0000
+00026d 919f
+00026e 918f
+00026f 912f
+000270 2fb0
+000271 95b2
+000272 7fb0
+000273 b9bb
+000274 9a28
+000275 932f
+000276 938f
+000277 939f
+000278 e023
+000279 e38e
+00027a e99c
+00027b 9701
+00027c f7f1
+00027d 952a
+00027e f7d1
+00027f 0000
+000280 919f
+000281 918f
+000282 912f
+000283 9828
+000284 932f
+000285 938f
+000286 939f
+000287 e023
+000288 e38e
+000289 e99c
+00028a 9701
+00028b f7f1
+00028c 952a
+00028d f7d1
+00028e 0000
+00028f 919f
+000290 918f
+000291 912f
+000292 910f                      	data_wrt 'R'
+000293 930f
+000294 e405
+000295 2fb0
+000296 7fb0
+000297 b9bb
+000298 9a29
+000299 9a28
+00029a 932f
+00029b 938f
+00029c 939f
+00029d e023
+00029e e38e
+00029f e99c
+0002a0 9701
+0002a1 f7f1
+0002a2 952a
+0002a3 f7d1
+0002a4 0000
+0002a5 919f
+0002a6 918f
+0002a7 912f
+0002a8 9828
+0002a9 932f
+0002aa 938f
+0002ab 939f
+0002ac e023
+0002ad e38e
+0002ae e99c
+0002af 9701
+0002b0 f7f1
+0002b1 952a
+0002b2 f7d1
+0002b3 0000
+0002b4 919f
+0002b5 918f
+0002b6 912f
+0002b7 2fb0
+0002b8 95b2
+0002b9 7fb0
+0002ba b9bb
+0002bb 9a28
+0002bc 932f
+0002bd 938f
+0002be 939f
+0002bf e023
+0002c0 e38e
+0002c1 e99c
+0002c2 9701
+0002c3 f7f1
+0002c4 952a
+0002c5 f7d1
+0002c6 0000
+0002c7 919f
+0002c8 918f
+0002c9 912f
+0002ca 9828
+0002cb 932f
+0002cc 938f
+0002cd 939f
+0002ce e023
+0002cf e38e
+0002d0 e99c
+0002d1 9701
+0002d2 f7f1
+0002d3 952a
+0002d4 f7d1
+0002d5 0000
+0002d6 919f
+0002d7 918f
+0002d8 912f
+0002d9 910f                      	data_wrt 'E'
+0002da 930f
+0002db e401
+0002dc 2fb0
+0002dd 7fb0
+0002de b9bb
+0002df 9a29
+0002e0 9a28
+0002e1 932f
+0002e2 938f
+0002e3 939f
+0002e4 e023
+0002e5 e38e
+0002e6 e99c
+0002e7 9701
+0002e8 f7f1
+0002e9 952a
+0002ea f7d1
+0002eb 0000
+0002ec 919f
+0002ed 918f
+0002ee 912f
+0002ef 9828
+0002f0 932f
+0002f1 938f
+0002f2 939f
+0002f3 e023
+0002f4 e38e
+0002f5 e99c
+0002f6 9701
+0002f7 f7f1
+0002f8 952a
+0002f9 f7d1
+0002fa 0000
+0002fb 919f
+0002fc 918f
+0002fd 912f
+0002fe 2fb0
+0002ff 95b2
+000300 7fb0
+000301 b9bb
+000302 9a28
+000303 932f
+000304 938f
+000305 939f
+000306 e023
+000307 e38e
+000308 e99c
+000309 9701
+00030a f7f1
+00030b 952a
+00030c f7d1
+00030d 0000
+00030e 919f
+00030f 918f
+000310 912f
+000311 9828
+000312 932f
+000313 938f
+000314 939f
+000315 e023
+000316 e38e
+000317 e99c
+000318 9701
+000319 f7f1
+00031a 952a
+00031b f7d1
+00031c 0000
+00031d 919f
+00031e 918f
+00031f 912f
+000320 910f                      	data_wrt 'A'
+000321 930f
+000322 e404
+000323 2fb0
+000324 7fb0
+000325 b9bb
+000326 9a29
+000327 9a28
+000328 932f
+000329 938f
+00032a 939f
+00032b e023
+00032c e38e
+00032d e99c
+00032e 9701
+00032f f7f1
+000330 952a
+000331 f7d1
+000332 0000
+000333 919f
+000334 918f
+000335 912f
+000336 9828
+000337 932f
+000338 938f
+000339 939f
+00033a e023
+00033b e38e
+00033c e99c
+00033d 9701
+00033e f7f1
+00033f 952a
+000340 f7d1
+000341 0000
+000342 919f
+000343 918f
+000344 912f
+000345 2fb0
+000346 95b2
+000347 7fb0
+000348 b9bb
+000349 9a28
+00034a 932f
+00034b 938f
+00034c 939f
+00034d e023
+00034e e38e
+00034f e99c
+000350 9701
+000351 f7f1
+000352 952a
+000353 f7d1
+000354 0000
+000355 919f
+000356 918f
+000357 912f
+000358 9828
+000359 932f
+00035a 938f
+00035b 939f
+00035c e023
+00035d e38e
+00035e e99c
+00035f 9701
+000360 f7f1
+000361 952a
+000362 f7d1
+000363 0000
+000364 919f
+000365 918f
+000366 912f
+000367 910f                      	data_wrt 'D'
+000368 930f
+000369 e409
+00036a 2fb0
+00036b 7fb0
+00036c b9bb
+00036d 9a29
+00036e 9a28
+00036f 932f
+000370 938f
+000371 939f
+000372 e023
+000373 e38e
+000374 e99c
+000375 9701
+000376 f7f1
+000377 952a
+000378 f7d1
+000379 0000
+00037a 919f
+00037b 918f
+00037c 912f
+00037d 9828
+00037e 932f
+00037f 938f
+000380 939f
+000381 e023
+000382 e38e
+000383 e99c
+000384 9701
+000385 f7f1
+000386 952a
+000387 f7d1
+000388 0000
+000389 919f
+00038a 918f
+00038b 912f
+00038c 2fb0
+00038d 95b2
+00038e 7fb0
+00038f b9bb
+000390 9a28
+000391 932f
+000392 938f
+000393 939f
+000394 e023
+000395 e38e
+000396 e99c
+000397 9701
+000398 f7f1
+000399 952a
+00039a f7d1
+00039b 0000
+00039c 919f
+00039d 918f
+00039e 912f
+00039f 9828
+0003a0 932f
+0003a1 938f
+0003a2 939f
+0003a3 e023
+0003a4 e38e
+0003a5 e99c
+0003a6 9701
+0003a7 f7f1
+0003a8 952a
+0003a9 f7d1
+0003aa 0000
+0003ab 919f
+0003ac 918f
+0003ad 912f
+0003ae 910f                      	data_wrt 'I'
+0003af 930f
+0003b0 e40e
+0003b1 2fb0
+0003b2 7fb0
+0003b3 b9bb
+0003b4 9a29
+0003b5 9a28
+0003b6 932f
+0003b7 938f
+0003b8 939f
+0003b9 e023
+0003ba e38e
+0003bb e99c
+0003bc 9701
+0003bd f7f1
+0003be 952a
+0003bf f7d1
+0003c0 0000
+0003c1 919f
+0003c2 918f
+0003c3 912f
+0003c4 9828
+0003c5 932f
+0003c6 938f
+0003c7 939f
+0003c8 e023
+0003c9 e38e
+0003ca e99c
+0003cb 9701
+0003cc f7f1
+0003cd 952a
+0003ce f7d1
+0003cf 0000
+0003d0 919f
+0003d1 918f
+0003d2 912f
+0003d3 2fb0
+0003d4 95b2
+0003d5 7fb0
+0003d6 b9bb
+0003d7 9a28
+0003d8 932f
+0003d9 938f
+0003da 939f
+0003db e023
+0003dc e38e
+0003dd e99c
+0003de 9701
+0003df f7f1
+0003e0 952a
+0003e1 f7d1
+0003e2 0000
+0003e3 919f
+0003e4 918f
+0003e5 912f
+0003e6 9828
+0003e7 932f
+0003e8 938f
+0003e9 939f
+0003ea e023
+0003eb e38e
+0003ec e99c
+0003ed 9701
+0003ee f7f1
+0003ef 952a
+0003f0 f7d1
+0003f1 0000
+0003f2 919f
+0003f3 918f
+0003f4 912f
+0003f5 910f                      	data_wrt 'N'
+0003f6 930f
+0003f7 e407
+0003f8 2fb0
+0003f9 7fb0
+0003fa b9bb
+0003fb 9a29
+0003fc 9a28
+0003fd 932f
+0003fe 938f
+0003ff 939f
+000400 e023
+000401 e38e
+000402 e99c
+000403 9701
+000404 f7f1
+000405 952a
+000406 f7d1
+000407 0000
+000408 919f
+000409 918f
+00040a 912f
+00040b 9828
+00040c 932f
+00040d 938f
+00040e 939f
+00040f e023
+000410 e38e
+000411 e99c
+000412 9701
+000413 f7f1
+000414 952a
+000415 f7d1
+000416 0000
+000417 919f
+000418 918f
+000419 912f
+00041a 2fb0
+00041b 95b2
+00041c 7fb0
+00041d b9bb
+00041e 9a28
+00041f 932f
+000420 938f
+000421 939f
+000422 e023
+000423 e38e
+000424 e99c
+000425 9701
+000426 f7f1
+000427 952a
+000428 f7d1
+000429 0000
+00042a 919f
+00042b 918f
+00042c 912f
+00042d 9828
+00042e 932f
+00042f 938f
+000430 939f
+000431 e023
+000432 e38e
+000433 e99c
+000434 9701
+000435 f7f1
+000436 952a
+000437 f7d1
+000438 0000
+000439 919f
+00043a 918f
+00043b 912f
+00043c 910f                      	data_wrt 'G'
+00043d 930f
+00043e e30a
+00043f 2fb0
+000440 7fb0
+000441 b9bb
+000442 9a29
+000443 9a28
+000444 932f
+000445 938f
+000446 939f
+000447 e023
+000448 e38e
+000449 e99c
+00044a 9701
+00044b f7f1
+00044c 952a
+00044d f7d1
+00044e 0000
+00044f 919f
+000450 918f
+000451 912f
+000452 9828
+000453 932f
+000454 938f
+000455 939f
+000456 e023
+000457 e38e
+000458 e99c
+000459 9701
+00045a f7f1
+00045b 952a
+00045c f7d1
+00045d 0000
+00045e 919f
+00045f 918f
+000460 912f
+000461 2fb0
+000462 95b2
+000463 7fb0
+000464 b9bb
+000465 9a28
+000466 932f
+000467 938f
+000468 939f
+000469 e023
+00046a e38e
+00046b e99c
+00046c 9701
+00046d f7f1
+00046e 952a
+00046f f7d1
+000470 0000
+000471 919f
+000472 918f
+000473 912f
+000474 9828
+000475 932f
+000476 938f
+000477 939f
+000478 e023
+000479 e38e
+00047a e99c
+00047b 9701
+00047c f7f1
+00047d 952a
+00047e f7d1
+00047f 0000
+000480 919f
+000481 918f
+000482 912f
+000483 910f                      	data_wrt ':'
+                                 	
+000484 e614                      	LDI r17,100
+000485 932f
+000486 18ff
+000487 e029
+000488 1f00
+000489 952a
+00048a f409
+00048b c008
+00048c 1cff
+00048d 1af1
+00048e f418
+00048f 0ef1
+000490 9488
+000491 cff6
+000492 9408
+000493 cff4
+000494 912f                      	div
+                                 	
+000495 e340                      	LDI r20,48
+000496 0f04                      	add r16,r20
+000497 930f
+000498 2f00
+000499 2fb0
+00049a 7fb0
+00049b b9bb
+00049c 9a29
+00049d 9a28
+00049e 932f
+00049f 938f
+0004a0 939f
+0004a1 e023
+0004a2 e38e
+0004a3 e99c
+0004a4 9701
+0004a5 f7f1
+0004a6 952a
+0004a7 f7d1
+0004a8 0000
+0004a9 919f
+0004aa 918f
+0004ab 912f
+0004ac 9828
+0004ad 932f
+0004ae 938f
+0004af 939f
+0004b0 e023
+0004b1 e38e
+0004b2 e99c
+0004b3 9701
+0004b4 f7f1
+0004b5 952a
+0004b6 f7d1
+0004b7 0000
+0004b8 919f
+0004b9 918f
+0004ba 912f
+0004bb 2fb0
+0004bc 95b2
+0004bd 7fb0
+0004be b9bb
+0004bf 9a28
+0004c0 932f
+0004c1 938f
+0004c2 939f
+0004c3 e023
+0004c4 e38e
+0004c5 e99c
+0004c6 9701
+0004c7 f7f1
+0004c8 952a
+0004c9 f7d1
+0004ca 0000
+0004cb 919f
+0004cc 918f
+0004cd 912f
+0004ce 9828
+0004cf 932f
+0004d0 938f
+0004d1 939f
+0004d2 e023
+0004d3 e38e
+0004d4 e99c
+0004d5 9701
+0004d6 f7f1
+0004d7 952a
+0004d8 f7d1
+0004d9 0000
+0004da 919f
+0004db 918f
+0004dc 912f
+0004dd 910f                      	data_wrt_reg r16
+                                 	
+                                 	
+                                 	; check 10th Place 
+0004de 2d0f                      	mov r16,r15
+0004df e01a                      	LDI r17,10
+0004e0 932f
+0004e1 18ff
+0004e2 e029
+0004e3 1f00
+0004e4 952a
+0004e5 f409
+0004e6 c008
+0004e7 1cff
+0004e8 1af1
+0004e9 f418
+0004ea 0ef1
+0004eb 9488
+0004ec cff6
+0004ed 9408
+0004ee cff4
+0004ef 912f                      	div
+0004f0 e340                      	LDI r20,48
+0004f1 0f04                      	add r16,r20
+0004f2 930f
+0004f3 2f00
+0004f4 2fb0
+0004f5 7fb0
+0004f6 b9bb
+0004f7 9a29
+0004f8 9a28
+0004f9 932f
+0004fa 938f
+0004fb 939f
+0004fc e023
+0004fd e38e
+0004fe e99c
+0004ff 9701
+000500 f7f1
+000501 952a
+000502 f7d1
+000503 0000
+000504 919f
+000505 918f
+000506 912f
+000507 9828
+000508 932f
+000509 938f
+00050a 939f
+00050b e023
+00050c e38e
+00050d e99c
+00050e 9701
+00050f f7f1
+000510 952a
+000511 f7d1
+000512 0000
+000513 919f
+000514 918f
+000515 912f
+000516 2fb0
+000517 95b2
+000518 7fb0
+000519 b9bb
+00051a 9a28
+00051b 932f
+00051c 938f
+00051d 939f
+00051e e023
+00051f e38e
+000520 e99c
+000521 9701
+000522 f7f1
+000523 952a
+000524 f7d1
+000525 0000
+000526 919f
+000527 918f
+000528 912f
+000529 9828
+00052a 932f
+00052b 938f
+00052c 939f
+00052d e023
+00052e e38e
+00052f e99c
+000530 9701
+000531 f7f1
+000532 952a
+000533 f7d1
+000534 0000
+000535 919f
+000536 918f
+000537 912f
+000538 910f                      	data_wrt_reg r16
+                                 	
+                                 
+                                 	; check 1th Place 
+000539 e340                      	LDI r20,48
+00053a 0ef4                      	add r15,r20
+00053b 930f
+00053c 2d0f
+00053d 2fb0
+00053e 7fb0
+00053f b9bb
+000540 9a29
+000541 9a28
+000542 932f
+000543 938f
+000544 939f
+000545 e023
+000546 e38e
+000547 e99c
+000548 9701
+000549 f7f1
+00054a 952a
+00054b f7d1
+00054c 0000
+00054d 919f
+00054e 918f
+00054f 912f
+000550 9828
+000551 932f
+000552 938f
+000553 939f
+000554 e023
+000555 e38e
+000556 e99c
+000557 9701
+000558 f7f1
+000559 952a
+00055a f7d1
+00055b 0000
+00055c 919f
+00055d 918f
+00055e 912f
+00055f 2fb0
+000560 95b2
+000561 7fb0
+000562 b9bb
+000563 9a28
+000564 932f
+000565 938f
+000566 939f
+000567 e023
+000568 e38e
+000569 e99c
+00056a 9701
+00056b f7f1
+00056c 952a
+00056d f7d1
+00056e 0000
+00056f 919f
+000570 918f
+000571 912f
+000572 9828
+000573 932f
+000574 938f
+000575 939f
+000576 e023
+000577 e38e
+000578 e99c
+000579 9701
+00057a f7f1
+00057b 952a
+00057c f7d1
+00057d 0000
+00057e 919f
+00057f 918f
+000580 912f
+000581 910f                      	data_wrt_reg r15
+                                 	
+000582 932f
+000583 938f
+000584 939f
+000585 e624
+000586 e38e
+000587 e99c
+000588 9701
+000589 f7f1
+00058a 952a
+00058b f7d1
+00058c 0000
+00058d 919f
+00058e 918f
+00058f 912f                      	delay 1000
+                                 	  
+                                 	  
+000590 cc61                      	RJMP  again             ;jump to again for another run
 
 
 RESOURCE USE INFORMATION
@@ -1617,37 +2732,37 @@ counted separately from r26..r31 here.
 "ATmega328P" register use summary:
 x  :   0 y  :   0 z  :   0 r0 :   0 r1 :   0 r2 :   0 r3 :   0 r4 :   0 
 r5 :   0 r6 :   0 r7 :   0 r8 :   0 r9 :   0 r10:   0 r11:   0 r12:   0 
-r13:   0 r14:   0 r15:  13 r16:  99 r17:   6 r18:  72 r19:   0 r20:   6 
-r21:   0 r22:   0 r23:   0 r24:  64 r25:  48 r26:   0 r27:   0 r28:   0 
+r13:   0 r14:   0 r15:  13 r16: 108 r17:   9 r18: 316 r19:   0 r20:   6 
+r21:   0 r22:   0 r23:   0 r24: 308 r25: 231 r26:   0 r27: 126 r28:   0 
 r29:   0 r30:   0 r31:   0 
-Registers used: 7 out of 35 (20.0%)
+Registers used: 8 out of 35 (22.9%)
 
 "ATmega328P" instruction use summary:
 .lds  :   0 .sts  :   0 adc   :   0 add   :   5 adiw  :   0 and   :   0 
-andi  :   0 asr   :   0 bclr  :   0 bld   :   0 brbc  :   0 brbs  :   0 
+andi  :  36 asr   :   0 bclr  :   0 bld   :   0 brbc  :   0 brbs  :   0 
 brcc  :   2 brcs  :   0 break :   0 breq  :   0 brge  :   0 brhc  :   0 
-brhs  :   0 brid  :   0 brie  :   0 brlo  :   1 brlt  :   0 brmi  :   0 
-brne  :  34 brpl  :   0 brsh  :   0 brtc  :   0 brts  :   0 brvc  :   0 
-brvs  :   0 bset  :   0 bst   :   0 call  :   0 cbi   :  19 cbr   :   0 
+brhs  :   0 brid  :   0 brie  :   0 brlo  :   0 brlt  :   0 brmi  :   0 
+brne  : 156 brpl  :   0 brsh  :   1 brtc  :   0 brts  :   0 brvc  :   0 
+brvs  :   0 bset  :   0 bst   :   0 call  :   0 cbi   :  46 cbr   :   0 
 clc   :   2 clh   :   0 cli   :   0 cln   :   0 clr   :   0 cls   :   0 
 clt   :   0 clv   :   0 clz   :   0 com   :   0 cp    :   0 cpc   :   0 
-cpi   :   1 cpse  :   0 dec   :  18 eor   :   0 fmul  :   0 fmuls :   0 
+cpi   :   1 cpse  :   0 dec   :  79 eor   :   0 fmul  :   0 fmuls :   0 
 fmulsu:   0 icall :   0 ijmp  :   0 in    :   0 inc   :   0 jmp   :   0 
-ld    :   0 ldd   :   0 ldi   :  83 lds   :   0 lpm   :   0 lsl   :   0 
-lsr   :   0 mov   :   4 movw  :   0 mul   :   0 muls  :   0 mulsu :   0 
-neg   :   0 nop   :  16 or    :   0 ori   :   0 out   :  30 pop   :  65 
-push  :  65 rcall :   0 ret   :   0 reti  :   0 rjmp  :   7 rol   :   4 
-ror   :   0 sbc   :   0 sbci  :   0 sbi   :  38 sbic  :   0 sbis  :   0 
-sbiw  :  16 sbr   :   0 sbrc  :   0 sbrs  :   0 sec   :   2 seh   :   0 
+ld    :   0 ldd   :   0 ldi   : 255 lds   :   4 lpm   :   0 lsl   :   0 
+lsr   :   0 mov   :  41 movw  :   0 mul   :   0 muls  :   0 mulsu :   0 
+neg   :   0 nop   :  77 or    :   0 ori   :   1 out   :  36 pop   : 251 
+push  : 251 rcall :   0 ret   :   0 reti  :   0 rjmp  :   9 rol   :   4 
+ror   :   0 sbc   :   0 sbci  :   0 sbi   :  56 sbic  :   0 sbis  :   0 
+sbiw  :  77 sbr   :   0 sbrc  :   1 sbrs  :   0 sec   :   2 seh   :   0 
 sei   :   0 sen   :   0 ser   :   0 ses   :   0 set   :   0 sev   :   0 
-sez   :   0 sleep :   0 spm   :   0 st    :   0 std   :   0 sts   :   0 
-sub   :   4 subi  :   0 swap  :   0 tst   :   0 wdr   :   0 
-Instructions used: 20 out of 113 (17.7%)
+sez   :   0 sleep :   0 spm   :   0 st    :   0 std   :   0 sts   :   3 
+sub   :   4 subi  :   0 swap  :  18 tst   :   0 wdr   :   0 
+Instructions used: 26 out of 113 (23.0%)
 
 "ATmega328P" memory use summary [bytes]:
 Segment   Begin    End      Code   Data   Used    Size   Use%
 ---------------------------------------------------------------
-[.cseg] 0x000000 0x000340    832      0    832   32768   2.5%
+[.cseg] 0x000000 0x000b22   2850      0   2850   32768   8.7%
 [.dseg] 0x000100 0x000100      0      0      0    2048   0.0%
 [.eseg] 0x000000 0x000000      0      0      0    1024   0.0%
 
